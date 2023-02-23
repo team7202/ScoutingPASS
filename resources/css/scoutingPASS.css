@@ -1,3 +1,9 @@
+:root {
+    --text: orange;
+    --border: orangered;
+    --button: darkorange;
+}
+
 @font-face {
     font-family: 'Alexis';
     font-style: normal;
@@ -11,63 +17,63 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
-    color: white;
-    background-color: black;
+    color: var(--text);
+    background-color: rgb(28,25,23);
 }
 
 #prematch_table, #postmatch_table {
 
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: center;
-    color: white;
+    color: var(--text);;
     font-size: 13px;
     font-style: bold;
     letter-spacing: 1px;
     border-width: 4px;
-    border-color: white;
+    border-color: var(--border);
 }
 
 #auton_table, #endgame_table, #teleop_table {
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    color: black;
+    color: var(--text);
     font-size: 13px;
     font-style: bold;
     letter-spacing: 1px;
     border-width: 4px;
-    border-color: black;
+    border-color: var(--border);
 }
 
 .button {
-    font-family: Alexis;
+    font-family: Alexis; 
     font-size: 16px;
 }
 
 #autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
-    color: black;
-    border-color: black;
+    color: var(--text);
+    border-color: var(--border);
     border-width: 4px;
 }
 
 #postmatchHeader{
     border-width: 4px;
-    border-color: white;
+    border-color: var(--border);
 }
 
 #prematchHeader1, #prematchHeader2{
-    color: white;
-    border-color: white;
+    color: var(--text);
+    border-color: var(--border);
     border-width: 4px;
 }
 
 #qrHeader1, #qrHeader2 {
-    color: black;
+    color: var(--text);
 }
-
+    
 .field-image {
     margin: 2vw;
 }
 
-.field-image-src{
+.field-image-src{  
     background-position: center;
     border: 1px solid;
 }
@@ -80,8 +86,7 @@ html, body{
     position: absolute;
     left: 0;
     top: 0;
-    color: white;
-    background-color: black;
+    color: var(--text);
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: justify;
 }
@@ -104,22 +109,21 @@ html, body{
 
 #qr-code{
   text-align: center;
-  color: black;
 }
 
 h1{
     font-family: Alexis;
     text-align: center;
     border-style: groove;
-    border-color: white;
+    border-color: var(--border);
     border-width: 2px;
     font-size: 40px;
-    padding: 10px;
+    padding: 10px; 
     font-weight: 350;
 }
 
 #page2, #page4 {
-    color: black;
+    color: var(--text)
 }
 
 h2{
@@ -154,40 +158,40 @@ h2{
 }
 
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm, .submitForm, #displayButton, #copyButton {
-    font-family: Alexis;
+    font-family: Alexis; 
     padding: 10px;
-    background-color: rgb(151, 199, 240);
+    background-color: var(--button);
     text-decoration: none;
     display: inline-block;
 }
 
 #nextButton3, #nextButton4, #nextButton5, #nextButton6, #nextButton7, #nextButton8 {
     font-family: Alexis;
-    background-color: black;
+    background-color: var(--button);
     padding: 10px;
-    color: white;
+    color: black;
 }
 
 .undoButton, .flipButton {
     font-family: Alexis;
-    background-color: black;
+    background-color: var(--button);
     padding: 10px;
-    color: white;
+    color: black;
     margin-left: 20px;
 }
 
 #prevButton7, #prevButton8, #prevButton9{
     font-family: Alexis;
-    background-color: rgb(151, 199, 240);
+    background-color: var(--button);
     padding: 10px;
 }
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
     font-family: Alexis;
-    background-color: black;
+    background-color: var(--button);
     padding: 10px;
-    color: white;
-
+    color: black;
+    
 }
 
 #prematch_table{
@@ -199,17 +203,17 @@ h2{
 h1 .odd {
     font-family: Alexis;
     text-align: center;
-    color: #0AB4EC;
+    color: var(--text);
 }
 
 h1 .even {
     font-family: Alexis;
     text-align: center;
-    color: #42B333;
+    color: var(--text);
 }
 
 table {
-    border: 1px solid black;
+    border: 1px solid var(--border);
     width: 100%;
 }
 
@@ -234,8 +238,8 @@ input {
 
 #qr-table {
     text-align: center;
-    color: black;
-    background-color: white;
+    color: var(--text);
+    background-color: rgba(0,0,0,0.5);
 }
 
 #data {
